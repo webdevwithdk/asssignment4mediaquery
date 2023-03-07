@@ -1,0 +1,63 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+
+}
+.background{
+    background-color: cyan;
+    width: 100%;
+    height: 100vh;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 50vh;
+}
+.backgroud,.laptop, .tablet, .mobile, .bigger{
+    display: none;
+}
+@media screen and (max-width:1440px){
+    .background{
+        background-color: green;
+    }
+    .background .laptop , .tablet,.mobile{
+        display: none;
+    }
+    .bigger{
+        display: block;
+    }
+}
+@media screen and (max-width:1024px)and (min-width:768px){
+    .background{
+        background-color: rgb(124, 66, 24);
+    }
+    .background .bigger ,.tablet, .mobile{
+        display: none;
+    }
+    .background .laptop{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:768px)and (min-width:425px){
+    .background{
+        background-color: cyan;
+    }
+    .background .bigger ,.laptop .mobile {
+        display: none;
+    }
+    .background .tablet{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:425px){
+    .background{
+        background-color: maroon;
+    }
+    .background .laptop, .bigger, .tablet{
+        display:none;
+    }
+    .background .mobile{
+        display: block;
+    }
+    
+}
